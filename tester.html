@@ -5,4 +5,13 @@
 <p>He did it</p>
 
 </body>
+<script>
+    function saveFile(){
+        const fs = require('fs')
+        let data = msg;
+        fs.writeFile('tester.txt', data, (err) => {
+          if (err) throw err;
+      })
+    }
+</script>
 </html>
