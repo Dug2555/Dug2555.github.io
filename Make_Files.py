@@ -22,9 +22,13 @@ except OSError as error:
     f.write("<html>\n")
     f.write("<body>\n")
     f.write("<h2>" + i[0] + "</h2>\n")
-    f.write("<h3>Level: " + i[2] + " Classes: " + i[1] + "</h3>\n")
-    f.write("<h4>School: " + i[3] + " Casting Time: " + i[4] + " Range: " + i[5] + "</h4>\n")
-    f.write("<h4>Duration: " + i[6] + " ")
+    f.write("<h3>Level: " + i[2] + "</h3>\n")
+    f.write("<h3>Classes: " + i[1] + "</h3>\n")
+    f.write("<h4>School: " + i[3] + "</h4>\n")
+    f.write("<h4>Casting Time: " + i[4] + "</h4>\n")
+    f.write("<h4>Range: " + i[5] + "</h4>\n")
+    f.write("<h4>Duration: " + i[6] + "</h4>\n")
+    f.write("<h4>Components: ")
     if i[7] == "1": 
         f.write("V ")
     if i[8] == "1": 
