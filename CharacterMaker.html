@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+<h1>Name your Character</h1>
+<div>
+    <input id="name" class="py-input" type="text">
+    <button py-click="makeFolder()" id ="test">Submit</button>
+    <p id = "error"></p>
+</div>
+
+<py-config>
+    terminal = true
+</py-config>
+
+<py-script>
+    
+    import os
+    def makeFolder():
+        print("hi")
+        try:
+            print("work")
+            print(os.getcwd())
+        except OSError as error:
+            print("not")
+            wrong = Element("error")
+            rong.element.innerText = "nope" 
+</py-script>
