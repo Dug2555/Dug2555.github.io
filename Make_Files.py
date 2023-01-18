@@ -15,9 +15,11 @@ try:
 except OSError as error: 
     print("Already made")
 
-# for i in data:
-    i = data[1]
-    f = open("Spells/" + i[0] + ".html", "w")
+for i in data:
+    try:
+        f = open("Spells/" + i[0] + ".html", "w", encoding='utf-8')
+    except:
+        continue
     f.write("<!DOCTYPE html>\n")
     f.write("<html>\n")
     f.write("<body>\n")
