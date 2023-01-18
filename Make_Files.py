@@ -38,8 +38,8 @@ for i in data:
     if i[9] == "1": 
         f.write("M ")    
     if i[10] != "":
-        f.write("Material Cost: " + i[10])
-    f.write("</h4>\n")
+        f.write("</h4><h6>Material Cost: " + i[10])
+    f.write("</h6>\n")
     f.write("<p>" + i[11] + "</p>\n")
     f.write("</html>\n")
 
